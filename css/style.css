@@ -1,0 +1,167 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+html
+{
+    font-size: 62.5%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+    background-color: #fdfcf6;
+}
+
+
+.top-wrapper{
+  height: 500px;
+  width: 100%;
+  background-image:url(../images/beach.jpg);
+  background-size:cover;
+}
+
+.top-container{
+  width:100%;
+  color: white;
+  text-align: center;
+  padding-top: 130px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+@media (max-width:768px){
+  .top-wrapper{
+    height: 250px;
+  }
+  .top-container{
+    padding-top: 10%;
+  }
+  
+}
+
+.top-container h1{
+  font-size: 250%;
+  font-weight: bold;
+  letter-spacing: 150%;
+}
+
+@media (max-width:768px){
+.top-container h1{
+  font-size: 150%;
+  font-weight: bold;
+  letter-spacing: 110%;
+}  
+}
+
+.main-wrapper{
+  width: 100%;
+  text-align: center;
+}
+
+.main-container{
+  padding: 30px 10px;
+}
+
+.main-heading{
+  padding: 5px;
+  height: 30px;
+}
+
+.main-heading h2{
+  font-size: 200%;
+  color: black;
+  font-weight: bold;
+}
+
+.boxes{
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.box{
+  height: 100%;
+  float: left;
+  width: 33.333%;
+  padding: 5px 15px;
+}
+
+@media (max-width:768px){
+  .box{
+   float: none;
+   width: 100%;
+   margin: 0 auto; /*左右中央寄せ*/
+  }
+}
+
+.icon{
+  position: relative;
+}
+
+.icon img{
+  width: 100%;
+}
+
+.icon p{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  margin: auto;
+  color: white;
+  height: 3em;
+  padding: 0 1em;
+}
+
+footer{
+  height: 200px;
+}
+
+.bottom-container{
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  background-image:url(../images/footer4.jpg);
+  background-size:cover;
+}
+
+.bottom-container h2{
+  color: white;
+  font-size: 140%;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.btn{
+  padding: 8px 24px;
+  color: black;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.btn:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
