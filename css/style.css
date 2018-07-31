@@ -51,14 +51,14 @@ body
 .top-container h1{
   font-size: 250%;
   font-weight: bold;
-  letter-spacing: 150%;
+  letter-spacing: 0.1em;
 }
 
 @media (max-width:768px){
 .top-container h1{
   font-size: 150%;
   font-weight: bold;
-  letter-spacing: 110%;
+  letter-spacing: 0.08em;
 }  
 }
 
